@@ -4,19 +4,19 @@
 
 /*
 * returns application that is defined somewhere else
-* "extern" znamená "Nedefinuj tuto proměnnou, je již deklarovaná někde jinde (třeba v jiném souboru)
+* NOTE: "extern" znamená "Nedefinuj tuto proměnnou, je již deklarovaná někde jinde (třeba v jiném souboru)
 */
 extern PURMA::Application* PURMA::CreateApplication();
 
-/// <summary>
-/// 
-/// </summary>
-/// <param name="argc">Argument Count</param>
-/// <param name="argv">Argument Values</param> // Pointer-to-Pointer to char, ekvivalent char* argv[]
-/// <returns></returns>
+/// "argv" NOTE: Pointer-to-Pointer to char, ekvivalent char* argv[]
 int main(int argc, char** argv)
 {
-	printf("Welcome to PURMA!");
+	printf("Welcome to PURMA!\n---------------------------\n");
+
+	PURMA::Log::Init();
+	PUR_CORE_WARN("Log Initialized!");
+	PUR_INFO("Client Log Initialized!");
+
 	/* "auto" nechává compiler rozhodnout datový typ */
 	auto app = PURMA::CreateApplication();
 	app->Run();

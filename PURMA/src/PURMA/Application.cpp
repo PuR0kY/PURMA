@@ -2,7 +2,7 @@
 
 namespace PURMA {
 
-	// Implementace Application třídy z Header souboru
+	// NOTE:  Implementace Application třídy z Header souboru
 	Application::Application()
 	{
 
