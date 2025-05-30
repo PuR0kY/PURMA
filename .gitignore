@@ -1,0 +1,27 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+
+# Build artifacts
+Debug/
+Release/
+x64/
+x86/
+*.obj
+*.exe
+*.dll
+*.lib
+*.pdb
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+build/
+
+# Optional: VS Code
+.vscode/
+
+# Ignore nested Git repos (if intentionally used)
+# .git/    <-- Do not include unless you're working with nested git repos
