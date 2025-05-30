@@ -1,0 +1,3 @@
+[submodule "PURMA/vendor/spdlog"]
+	path = PURMA/vendor/spdlog
+	url = https://github.com/gabime/spdlog
