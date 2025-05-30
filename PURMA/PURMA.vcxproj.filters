@@ -18,12 +18,18 @@
     <ClInclude Include="src\PURMA\Core.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Application.h">
+    <ClInclude Include="src\PURMA\Application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PURMA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PURMA\EntryPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Application.cpp">
+    <ClCompile Include="src\PURMA\Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
