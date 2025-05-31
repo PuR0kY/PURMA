@@ -27,7 +27,8 @@ project "PURMA"
 
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"PURMA/src"
 	}
 
 	filter "system:windows"

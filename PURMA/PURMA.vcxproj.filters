@@ -4,6 +4,9 @@
     <Filter Include="PURMA">
       <UniqueIdentifier>{AAABD60D-16C0-FEBE-DF41-A21E4B15FBEF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="PURMA\Events">
+      <UniqueIdentifier>{4E547509-3AB7-04AE-E33C-3D64CF7ED030}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\PURMA.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\PURMA\EntryPoint.h">
       <Filter>PURMA</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PURMA\Events\ApplicationEvent.h">
+      <Filter>PURMA\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PURMA\Events\Event.h">
+      <Filter>PURMA\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PURMA\Events\KeyEvent.h">
+      <Filter>PURMA\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PURMA\Events\MouseEvent.h">
+      <Filter>PURMA\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\PURMA\Log.h">
       <Filter>PURMA</Filter>

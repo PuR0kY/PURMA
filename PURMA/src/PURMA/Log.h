@@ -2,6 +2,7 @@
 
 #include "Core.h"
 #include "spdlog/spdlog.h"
+#include "spdlog/fmt/ostr.h"
 
 namespace PURMA {
 
@@ -19,7 +20,7 @@ namespace PURMA {
 }
 
 // Core log macros
-// NOTE: define tells preprocessor to create symbolic replacement (search-and-replace) before compilation even begins
+// NOTE: #define tells preprocessor to create symbolic replacement (search-and-replace) before compilation even begins
 #define PUR_CORE_TRACE(...) ::PURMA::Log::GetCoreLogger()->trace(__VA_ARGS__)
 #define PUR_CORE_INFO(...)  ::PURMA::Log::GetCoreLogger()->info(__VA_ARGS__)
 #define PUR_CORE_WARN(...)  ::PURMA::Log::GetCoreLogger()->warn(__VA_ARGS__)

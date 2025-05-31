@@ -1,6 +1,7 @@
 ﻿#pragma once
 
 #include "Core.h"
+#include "Events/Event.h"
 
 namespace PURMA {
 	// NOTE:  Header soubory jsou interfacy kódu, ukazují jak mají třídy vypadat, ale jak fungují
