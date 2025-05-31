@@ -56,27 +56,28 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>..\bin\Debug-windows-x64\PURMA\</OutDir>
-    <IntDir>..\bin-int \Debug-windows-x64\PURMA\</IntDir>
+    <IntDir>..\bin-int\Debug-windows-x64\PURMA\</IntDir>
     <TargetName>PURMA</TargetName>
     <TargetExt>.dll</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>..\bin\Release-windows-x64\PURMA\</OutDir>
-    <IntDir>..\bin-int \Release-windows-x64\PURMA\</IntDir>
+    <IntDir>..\bin-int\Release-windows-x64\PURMA\</IntDir>
     <TargetName>PURMA</TargetName>
     <TargetExt>.dll</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>..\bin\Dist-windows-x64\PURMA\</OutDir>
-    <IntDir>..\bin-int \Dist-windows-x64\PURMA\</IntDir>
+    <IntDir>..\bin-int\Dist-windows-x64\PURMA\</IntDir>
     <TargetName>PURMA</TargetName>
     <TargetExt>.dll</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>purpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>PUR_PLATFORM_WINDOWS;PUR_BUILD_DLL;PUR_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>vendor\spdlog\include;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -98,7 +99,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>purpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>PUR_PLATFORM_WINDOWS;PUR_BUILD_DLL;PUR_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>vendor\spdlog\include;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -124,7 +126,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>purpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>PUR_PLATFORM_WINDOWS;PUR_BUILD_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>vendor\spdlog\include;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -152,10 +155,14 @@
     <ClInclude Include="src\PURMA\Events\KeyEvent.h" />
     <ClInclude Include="src\PURMA\Events\MouseEvent.h" />
     <ClInclude Include="src\PURMA\Log.h" />
+    <ClInclude Include="src\purpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\PURMA\Application.cpp" />
     <ClCompile Include="src\PURMA\Log.cpp" />
+    <ClCompile Include="src\purpch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

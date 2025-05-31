@@ -34,6 +34,7 @@
     <ClInclude Include="src\PURMA\Log.h">
       <Filter>PURMA</Filter>
     </ClInclude>
+    <ClInclude Include="src\purpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\PURMA\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\PURMA\Log.cpp">
       <Filter>PURMA</Filter>
     </ClCompile>
+    <ClCompile Include="src\purpch.cpp" />
   </ItemGroup>
 </Project>

@@ -1,4 +1,5 @@
-﻿#include "Application.h"
+﻿#include "purpch.h"
+#include "Application.h"
 
 #include "PURMA/Events/ApplicationEvent.h"
 #include "PURMA/Log.h"

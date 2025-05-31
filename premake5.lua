@@ -17,7 +17,10 @@ project "PURMA"
 	language "C++"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int /" .. outputdir .. "/%{prj.name}")
+	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+	pchheader "purpch.h"
+	pchsource "PURMA/src/purpch.cpp"
 
 	files
 	{
@@ -69,7 +72,7 @@ project "Sandbox"
 	language "C++"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int /" .. outputdir .. "/%{prj.name}")
+	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
 	files
 	{

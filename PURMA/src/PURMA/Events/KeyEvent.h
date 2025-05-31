@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace PURMA {
 	/* Events done by keyboard -> using keyCodes */
 	class PUR_API KeyEvent : public Event

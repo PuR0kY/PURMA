@@ -1,9 +1,6 @@
 #pragma once
-
+#include "purpch.h"
 #include "PURMA/Core.h"
-
-#include <string>
-#include <functional>
 
 namespace PURMA {
 	/*

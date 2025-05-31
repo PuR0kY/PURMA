@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace PURMA {
 
 	/* WINDOW RESIZE */
